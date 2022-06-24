@@ -13,3 +13,5 @@ That is, based -only- on the training data of the -initial- propositions/network
 This reasoning, since it's programmed in an ad hoc way into the system, may turn out to be empirically true or false. Thus, given new data, stored as “new_data_name.csv” (this name is left to the user, the programme will go along with whatever name is assigned to it), the “.ndpredict(“new_data_name”)” method gives the probability for the reasoning being true or false for this new data.
 
 *Thing which may be, anyway, inconclusive, since an empirically true implication cannot cover, as training data, all of the truth table of a generic implication; during the training phase, pienex uses the training data of the initial networks to create “chimeras” that can produce those missing outputs in the truth tables, even when they would be impossible for data coming from the consistent empirical reality.
+
+Packages needed are NumPy and Keras (TensorFlow).
