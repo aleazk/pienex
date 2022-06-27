@@ -11,14 +11,14 @@
 
 def total_number_of_3tpls(nested_tpls):
 	count = 1
-	lst = list (list (nested_tpls))
+	lst = list (nested_tpls)
 	i=1
 	while type (())==type (lst[0]) or type (())==type (lst[2]):
 		if type (())==type (lst[2]):
-			lst = list (list (lst).pop(2))
+			lst = list (lst[2])
 			count+=1
 		if type (())==type (lst[0]):
-			lst = list (list (lst).pop(0))
+			lst = list (lst[0])
 			count+=1
 		i+=1
 	return count
@@ -32,16 +32,16 @@ def nth_innermost_3tpl(nested_tpls, n):
 		return nested_tpls
 	else:
 		count = 1
-		lst = list (list (nested_tpls))
+		lst = list (nested_tpls)
 		i=1
 		while type (())==type (lst[0]) or type (())==type (lst[2]):
 			if type (())==type (lst[2]):
-				lst = list (list (lst).pop(2))
+				lst = list (lst[2])
 				count+=1
 				if count==n:
 					break
 			if type (())==type (lst[0]):
-				lst = list (list (lst).pop(0))
+				lst = list (lst[0])
 				count+=1
 				if count==n:
 					break
